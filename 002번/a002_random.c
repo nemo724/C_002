@@ -3,3 +3,4 @@
 #include <time.h>
 
 int a[10];
+int dice[30];
