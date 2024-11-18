@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -26,7 +26,7 @@ printf("\n");
 }
 
 void RAND_MAX_print(void)
-{printf("time() ÇÔ¼ö¸¦ ÀÌ¿ëÇÑ rand()ÀÇ ÃÖ´ñ°ªÀº 16Áø¼ö : %x 10Áø¼ö : %6d \n",RAND_MAX,RAND_MAX); }
+{printf("time() í•¨ìˆ˜ë¥¼ ì´ìš©í•œ rand()ì˜ ìµœëŒ“ê°’ì€ 16ì§„ìˆ˜ : %x 10ì§„ìˆ˜ : %6d \n",RAND_MAX,RAND_MAX); }
 
 void make_dice_srand(void)
 {for (int i = 0; i < 30; i++)
@@ -38,7 +38,7 @@ void make_dice_srand(void)
 
 void print_dice(void)
 {	for (int i = 0; i < 30; i++)
-	{printf("%6d%c", dice[i], (i + 1) % 10 != 0 ? ' ' : '\n');}//(i+1)%10ÀÌ 0ÀÌ ¾Æ´Ñ°¡(!=0 ?) Âü(=0ÀÌ ¾Æ´Ï´Ù) ' ' Ãâ·Â °ÅÁş(=0ÀÌ ¸Â´Ù) '\n'Ãâ·Â
+	{printf("%6d%c", dice[i], (i + 1) % 10 != 0 ? ' ' : '\n');}//(i+1)%10ì´ 0ì´ ì•„ë‹Œê°€(!=0 ?) ì°¸(=0ì´ ì•„ë‹ˆë‹¤) ' ' ì¶œë ¥ ê±°ì§“(=0ì´ ë§ë‹¤) '\n'ì¶œë ¥
 }
 
 int main(void)
