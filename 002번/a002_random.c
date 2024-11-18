@@ -11,7 +11,7 @@ void make_srand(void);
 void print_srand(void);
 void RAND_MAX_print(void);
 void make_dice_srand(void);
-
+void print_dice(void);
 
 
 void make_srand(void)
@@ -36,13 +36,17 @@ void make_dice_srand(void)
 	//	{dice[i] = (double)rand() / RAND_MAX *(rand_max - rand_min + 1) + rand_min;}
 }
 
+void print_dice(void)
+{	for (int i = 0; i < 30; i++)
+	{printf("%6d%c", dice[i], (i + 1) % 10 != 0 ? ' ' : '\n');}//(i+1)%10이 0이 아닌가(!=0 ?) 참(=0이 아니다) ' ' 출력 거짓(=0이 맞다) '\n'출력
+}
 
 int main(void)
 {srand(time(0));
 make_srand();
 print_srand();
 make_dice_srand();
-
+print_dice();
 
 
 
