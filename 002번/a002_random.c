@@ -15,7 +15,7 @@ void print_dice(void);
 
 
 void make_srand(void)
-{for(int i =10;i<10;i++)
+{for(int i =0;i<10;i++)
 	{a[i]=rand(); }
 }
 
@@ -45,6 +45,7 @@ int main(void)
 {srand(time(0));
 make_srand();
 print_srand();
+RAND_MAX_print();
 make_dice_srand();
 print_dice();
 
